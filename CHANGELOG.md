@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+- Social Signin Button with Google, Facebook, Microsoft, LinkedIn, Twitter, GitHub, Apple, Email

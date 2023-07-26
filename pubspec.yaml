@@ -1,15 +1,16 @@
 name: social_signin_buttons_plugin
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/jiju-jacob/social_signin_buttons_plugin
 
 environment:
-  sdk: '>=2.18.4 <3.0.0'
+  sdk: ">=2.18.4 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:

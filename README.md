@@ -11,29 +11,56 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+The Flutter Social Login Buttons package provides a set of easy-to-use and customizable buttons for integrating social login functionality into your Flutter applications. With this package, you can allow users to log in or sign up using their existing social media accounts such as Google, Facebook, Twitter, and GitHub etc.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Ready-to-use buttons for Google, Facebook, Twitter, and GitHub login.
+- Easily customizable to match your app's design and theme.
+- Seamless integration with popular authentication providers.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add it to your pubspec.yaml file:
+
+```yaml
+dependencies:
+  social_login_buttons_plugin: ^1.0.0
+```
+
+Then, run flutter pub get to install the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Dart code:
 
 ```dart
-const like = 'sample';
+import 'package:social_login_buttons_plugin/social_login_buttons_plugin.dart';
 ```
 
-## Additional information
+Add the SignInButton to your UI:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    SignInButton(
+      Buttons.Google,
+      onPressed: () => _handleGoogleSignIn(),
+      text: 'Sign in with Google',
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+    ),
+    SignInButton(
+      Buttons.Facebook,
+      onPressed: () => _handleFacebookSignIn(),
+      text: 'Sign in with Facebook',
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+    ),
+    // Add more social login buttons as needed
+  ],
+),
+```
+
+## Contributions
+
+Contributions to this package are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on GitHub.
